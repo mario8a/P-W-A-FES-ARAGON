@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.titulo-page {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.carrusel {
+    overflow: hidden;
+    min-height: calc(50vh);
+    background-image: linear-gradient(#4285F4, #2274A5);
+}
+
+.carrusel h1 {
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.carousel {
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+    padding-left: 30px;
+}
+
+.carousel::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.carousel__container {
+    margin: 10px 0px;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.carousel-item {
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: 450ms all;
+    background-color: #0D3B66;
+    transform-origin: center left;
+}
+
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* Header */
+
+.titulo-page {
+    background: #F5A705;
+    color: white;
+    position: relative;
+}
+
+
+/* MODAL */
+
+h2 {
+    color: #0D3B66;
+    padding: 1rem;
+}
+
+#show-modal {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#show-modal:hover {
+    cursor: pointer;
+    /* background: rgb(72, 126, 29); */
+}
+
+.modal {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 9999999;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.modal .content-modal {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -100vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    z-index: 9999999;
+}
+
+.modal h2 {
+    padding: 1.2rem;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
+
+.modal h3 {
+    text-align: start;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.modal p {
+    text-align: justify;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.modal article {
+    height: 350px;
+    background: #b8b8b8;
+}
+
+.close-modal {
+    color: #e74c3c;
+    position: absolute;
+    top: 0.2em;
+    right: 0.375em;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.modal a:hover {
+    color: #c0392b;
+}
+
+.modal:target {
+    opacity: 1;
+    top: 0;
+}
+
+.modal .btn-close-modal {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+}
+
+.modal:target .content-modal {
+    top: 50px;
+    transition: top 0.35s ease;
+}
+
+@media (max-width: 769px) {
+    .modal .content-modal {
+        width: 90%;
+        max-width: none;
+        left: 5%;
+        margin-left: 0;
+    }
+}
