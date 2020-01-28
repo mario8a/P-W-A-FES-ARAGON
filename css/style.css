@@ -8,16 +8,16 @@ body {
 }
 
 
-/* header {
-    display: block;
-    position: fixed;
-    width: 100%;
-} */
+/* Header */
 
 .titulo-page {
     margin: 0;
-    padding: 20px;
+    padding: 15px;
+    background: #F5A705;
+    color: white;
     text-align: center;
+    position: relative;
+    font-family: 'Bad Script', cursive;
 }
 
 .carrusel {
@@ -32,6 +32,7 @@ body {
     padding: 10px;
     color: #ffffff;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
 
 .carousel {
@@ -75,15 +76,6 @@ body {
 }
 
 
-/* Header */
-
-.titulo-page {
-    background: #F5A705;
-    color: white;
-    position: relative;
-}
-
-
 /* MODAL */
 
 h2 {
@@ -101,7 +93,6 @@ h2 {
 
 #show-modal:hover {
     cursor: pointer;
-    /* background: rgb(72, 126, 29); */
 }
 
 .modal {
@@ -131,22 +122,25 @@ h2 {
 }
 
 .modal h2 {
-    padding: 1.2rem;
+    margin: 0;
+    padding: 1.1rem;
     text-align: center;
     color: #000000;
-    margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
 .modal h3 {
     text-align: start;
     padding-left: 15px;
     padding-top: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .modal p {
     text-align: justify;
     padding-left: 8px;
     padding-right: 8px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .modal article {
@@ -180,7 +174,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9999999;
+    z-index: 1;
 }
 
 .modal:target .content-modal {
